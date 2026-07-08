@@ -1,23 +1,34 @@
 #include<stdio.h>
 #include<string.h>
 
-struct library
+struct Bankaccount
 {
-    char Book[20];
-    int Quantity;
-    float Price;
+    int Accountno;
+    char Holder;
+    float Balance;
+    int a;
 };
 
 int main()
-
-
 {
-    struct library l;
+    struct Bankaccount b;
 
-    printf("Enter the Book: ");
-    gets(l.Book);
+    printf("Enter the account number: ");
+    scanf("%d",&b.Accountno);
 
-    printf("")
+    if(b.Accountno==882985)
+    {
+        printf("Account Holder:\n Raj Vaishnav");
+        printf("\nAccount Balance: 1022356986");
+
+    
+    }
+
+    else
+    {
+        printf("Please Enter valid acount number.Thank you!!");
+    }
+
     
 
 }
